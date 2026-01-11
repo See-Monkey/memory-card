@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 
 import getPokemon from "./functions/getPokemon.js";
+import Header from "./components/Header.jsx";
+import Loading from "./components/Loading.jsx";
+import DisplayCards from "./components/DisplayCards.jsx";
+import GameOver from "./components/GameOver.jsx";
 
 export default function App() {
 	const [loading, setLoading] = useState(true);
