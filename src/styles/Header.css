@@ -15,6 +15,7 @@ header {
 	gap: 10px;
 	text-align: center;
 	border-bottom: 2px solid var(--rose);
+	font-family: "Yusei Magic", sans-serif;
 }
 
 .visible {
@@ -33,6 +34,7 @@ header {
 	gap: 30px;
 	max-width: 1000px;
 	margin: 0 auto;
+	font-family: "Orbitron", sans-serif;
 }
 
 header h1,

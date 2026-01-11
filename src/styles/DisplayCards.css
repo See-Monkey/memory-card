@@ -28,6 +28,7 @@ section.pokemonCards {
 	border-radius: 4px;
 	box-shadow: 2px 2px 4px var(--black);
 	text-shadow: 1px 1px 1px var(--black);
+	font-family: "Yusei Magic", sans-serif;
 }
 
 @media (max-width: 600px) {

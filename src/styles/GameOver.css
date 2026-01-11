@@ -5,14 +5,19 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 8px;
+	gap: 14px;
 	text-align: center;
 	border-radius: 10px;
 	box-shadow: 1px 1px 4px var(--black);
+	font-family: "Orbitron", sans-serif;
 }
 
 .gameOverContainer h2 {
 	border-bottom: 1px solid var(--black);
+}
+
+.gameOverContainer p {
+	font-family: "Yusei Magic", sans-serif;
 }
 
 #newGameBtn {

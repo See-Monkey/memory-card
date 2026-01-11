@@ -6,7 +6,7 @@ export default function Header({ loading, score, maxScore, gameOver }) {
 			<h1>Pokemon Memory Card Game</h1>
 			<div id="scoreContainer" className={!gameOver ? "visible" : "hidden"}>
 				<h3>Score: {loading ? "" : score}</h3>
-				<h3>Max Score: {loading ? "" : maxScore}</h3>
+				<h3>High Score: {loading ? "" : maxScore}</h3>
 			</div>
 			<p
 				id="headerMsg"
