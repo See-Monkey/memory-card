@@ -23,7 +23,7 @@ export default function App() {
 			setScore(0);
 			setGameOver(false);
 
-			const data = await getPokemon(10);
+			const data = await getPokemon(12);
 			setPokemon(data);
 			setLoading(false);
 		}
