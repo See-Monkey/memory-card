@@ -13,6 +13,8 @@ export default function App() {
 
 	useEffect(() => {
 		async function newGame() {
+			setLoading(true);
+			setPokemon([]);
 			setSelected([]);
 			setScore(0);
 			setGameOver(false);
