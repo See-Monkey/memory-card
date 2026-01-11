@@ -7,13 +7,13 @@ export default function Header({ loading, score, maxScore, gameOver }) {
 			<div id="scoreContainer" className={!gameOver ? "visible" : "hidden"}>
 				<h3>Score: {loading ? "" : score}</h3>
 				<h3>Max Score: {loading ? "" : maxScore}</h3>
-				<p
-					id="headerMsg"
-					className={!loading && !gameOver ? "visible" : "hidden"}
-				>
-					Try to select all the Pokemon without picking the same one twice
-				</p>
 			</div>
+			<p
+				id="headerMsg"
+				className={!loading && !gameOver ? "visible" : "hidden"}
+			>
+				Try to select all the Pokemon without picking the same one twice
+			</p>
 		</header>
 	);
 }

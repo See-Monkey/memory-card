@@ -1,0 +1,52 @@
+#root {
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	background-color: var(--gold);
+	color: var(--blue);
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 10px;
+	text-align: center;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+#scoreContainer {
+	flex: 1;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	gap: 30px;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+header h1,
+header h3 {
+	text-shadow: 1px 1px 1px var(--black);
+}
+
+header p {
+	color: var(--black);
+}
+
+main {
+	background-color: var(--white);
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

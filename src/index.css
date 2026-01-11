@@ -56,5 +56,10 @@ h6 {
 	isolation: isolate;
 }
 :root {
-	/* declare global custom properties */
+	--black: #081621;
+	--blue: #5aa9e6;
+	--sky: #7fc8f8;
+	--white: #f9f9f9;
+	--gold: #ffe45e;
+	--rose: #ff6392;
 }
