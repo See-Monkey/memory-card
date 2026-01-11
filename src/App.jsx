@@ -12,11 +12,49 @@ export default function App() {
 	const [gamesPlayed, setGamesPlayed] = useState(0);
 
 	useEffect(() => {
-		async function getData() {
+		async function newGame() {
+			setSelected([]);
+			setScore(0);
+			setGameOver(false);
+
 			const data = await getPokemon(10);
 			setPokemon(data);
 			setLoading(false);
 		}
-		getData();
+		newGame();
 	}, [gamesPlayed]);
+
+	return (
+		<>
+			<Header
+				loading={loading}
+				score={score}
+				maxScore={maxScore}
+				gameOver={gameOver}
+			/>
+			<main>
+				{loading && <Loading />}
+				{!loading && !gameOver && (
+					<DisplayCards
+						pokemonArray={pokemonArray}
+						selected={selected}
+						setSelected={setSelected}
+						score={score}
+						setScore={setScore}
+						maxScore={maxScore}
+						setMaxScore={setMaxScore}
+						setGameOver={setGameOver}
+					/>
+				)}
+				{!loading && gameOver && (
+					<GameOver
+						score={score}
+						maxScore={maxScore}
+						setGameOver={setGameOver}
+						setGamesPlayed={setGamesPlayed}
+					/>
+				)}
+			</main>
+		</>
+	);
 }
