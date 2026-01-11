@@ -56,7 +56,6 @@ export default function App() {
 					<GameOver
 						score={score}
 						maxScore={maxScore}
-						setGameOver={setGameOver}
 						setGamesPlayed={setGamesPlayed}
 					/>
 				)}
