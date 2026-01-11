@@ -43,6 +43,7 @@ export default function App() {
 				{!loading && !gameOver && (
 					<DisplayCards
 						pokemonArray={pokemonArray}
+						setPokemon={setPokemon}
 						selected={selected}
 						setSelected={setSelected}
 						score={score}
